@@ -1,22 +1,16 @@
-<!DOCTYPE HTML>
- <html lang="pt-br">
+<html>
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <title>NOC OUTBOUNT GERAL</title>
-    <link href="css/seu-stylesheet.css" rel="stylesheet"/>
-    <script src="scripts/seu-script.js"></script>
-</head>
-<body background="C:\Users\bianc\Pictures\background-site.jpg">
-	
-<h1 align="center" >Noc Outbount</h1>
+<title> Sistema de Chamados - NOC OUTBOUND </title>
+<h1 align="center" >Noc Outbound</h1>
 <h2 Align="Center" >inclusao de chamados</h2>
+</head>
+<body>
 
-	<form action="/pagina-processa-dados-do-form" method="post">
-    
+<form method="POST" action="cadastro.php">
+
 <table align="center" border=1 >
 <tr>
-    <td>   
+    <td>
 	 <div>
         	<label for="Operacao">OPERACAO
 :</label>
@@ -37,11 +31,11 @@
     </td>
 
 </tr>
-<tr> 
+<tr>
      <td>
 	<div>
-        	<label for="DATA_INI">DATA INICIAL:</label>
-        	<input type="DATE" id="DATA_INI"/>
+        	<label for="DATA_INICIAL">DATA_INICIAL:</label>
+        	<input type="DATE" id="DATA_INICIAL"/>
 	</div>
 
      </td>
@@ -59,7 +53,7 @@
 
      </td>
 </tr>
-<tr> 
+<tr>
      <td>
 	<div>
         	<label for="SISTEMA">SISTEMA
@@ -73,12 +67,12 @@
     <td>
    	<div> <label for="CRITICIDADE">CRITICIDADE
 
-:</label>	
+:</label>
     		<select name="Criticidade" Value=>
   		<option value="alta">Alta</option>
   		<option value="média">Media</option>
   		<option value="baixa">Baixa</option>
-  	
+
      		</select>
     	</div)
     </td>
@@ -86,14 +80,14 @@
 <tr>
      <td>
 	<div>
-        	<label for="TIMEA">TIME ACIONADO
+        	<label for="TIME_ACIONADO">TIME_ACIONADO
 
 :</label>
-        	<input type="TIMEA" id="TIMEA" />
+        	<input type="TIME_ACIONADO" id="TIME_ACIONADO" />
   	</div>
     </td>
-    <td>    
-     
+    <td>
+
 	<div>
         	<label for="STATUS">STATUS
 
@@ -109,7 +103,7 @@
 <tr>
     <td align="center" colspan="2">
 	<div>
-        	<label for="DESCRICAO">DESCRICAO IMPACTO:</label>
+        	<label for="DESCRICAO">DESCRICAO_IMPACTO:</label>
         	<textarea id="DESCRICAO"></textarea>
     	</div>
     </td>
@@ -120,9 +114,6 @@
     	</div>
 </tr>
 
-</table>
 </form>
-
-
 </body>
 </html>
